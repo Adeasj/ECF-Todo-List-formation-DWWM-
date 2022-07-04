@@ -1,5 +1,5 @@
 const todo = () => {
-  return <p> Je suis un todo </p>;
+  return <div style={{border: 2px solid green}}> Je suis un todo </div>;
 };
 
 export default Todo;
