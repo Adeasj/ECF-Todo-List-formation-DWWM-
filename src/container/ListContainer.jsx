@@ -9,10 +9,15 @@ const ListContainer = () => {
     setLists((prevState) => [...prevState, { id: 1, title: value }]);
     setValue("");
   }
+
   return (
     <>
       <input value={value} onChange={(e) => setValue(e.target.value)} />
       <button onClick={() => handleOnClick()}> Créer une liste </button>
+
+      {List.map((list) => (
+        <List list={list} />
+      ))}
     </>
   );
 };
