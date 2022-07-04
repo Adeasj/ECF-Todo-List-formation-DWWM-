@@ -1,4 +1,4 @@
-const todo = () => {
+const Todo = () => {
   return <div style={{border: 2px solid green}}> Je suis un todo </div>;
 };
 

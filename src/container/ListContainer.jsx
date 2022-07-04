@@ -1,7 +1,7 @@
 import List from "../components/List";
 
-const listContainer = () => {
+const ListContainer = () => {
   return <p> Je suis le container </p>;
 };
 
-export default listContainer;
+export default ListContainer;

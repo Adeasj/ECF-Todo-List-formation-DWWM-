@@ -1,6 +1,6 @@
 import Todo from "./Todo";
 
-const list = () => {
+const List = () => {
   return  <div style={{border: 2px solid red}}> Je suis une liste </div>;
 };
 
