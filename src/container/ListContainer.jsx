@@ -39,7 +39,7 @@ const ListContainer = () => {
     <>
       <ListStyle>
         <div>
-          {/* Je créer mon 'formulaire' */}
+          {/* Je créer mon "formulaire" pour entrer mes listes */}
           <Input value={value} onChange={(e) => setValue(e.target.value)} />
           <Button onClick={() => handleOnClick()}> Créer une liste </Button>
 

@@ -39,7 +39,7 @@ const List = () => {
     <>
       <MyStyle>
         <div>
-          {/* Je créer mon 'formulaire' */}
+          {/* Je créer mon "formulaire" pour entrer mes tâches à faire */}
           <Input value={value} onChange={(e) => setValue(e.target.value)} />
           <br />
           <Button onClick={() => handleOnClick()}> Ajouter une tâche </Button>
