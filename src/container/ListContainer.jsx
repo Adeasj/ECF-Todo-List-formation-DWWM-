@@ -2,6 +2,8 @@ import List from "../components/List";
 import { useState } from "react";
 import styled from "styled-components";
 
+// J'intégre mon style CSS pour mes listes puis pour mon button
+
 const ListStyle = styled.section`
   padding: 20px;
   border: 4px solid #dbbfc2;
@@ -18,6 +20,8 @@ const Button = styled.button`
   border-radius: 4px;
 `;
 
+// Je créer ma fonction ListContainer qui me retournera une nouvel list de todos à chaque click (handOnClick)
+
 const ListContainer = () => {
   const [value, setValue] = useState("");
   const [lists, setLists] = useState([]);
@@ -31,9 +35,11 @@ const ListContainer = () => {
     <>
       <ListStyle>
         <div>
+          {/* Je créer mon 'formulaire' */}
           <input value={value} onChange={(e) => setValue(e.target.value)} />
           <Button onClick={() => handleOnClick()}> Créer une liste </Button>
 
+          {/* Je récupére et j'affiche mes listes */}
           {lists.map((list) => (
             <div>
               <h2> {list.title}</h2>

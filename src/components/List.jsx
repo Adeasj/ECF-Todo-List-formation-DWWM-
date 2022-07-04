@@ -2,6 +2,8 @@ import Todo from "./Todo";
 import { useState } from "react";
 import styled from "styled-components";
 
+// J'intégre mon style CSS pour mes todos puis mon mon button
+
 const MyStyle = styled.section`
   padding: 20px;
   border: 4px solid #f3e4c1;
@@ -18,6 +20,8 @@ const Button = styled.button`
   border-radius: 4px;
 `;
 
+// Je créer ma fonction liste que je vais retourner pour ajouter un nouveau todos à chaque click (handleOnClick)
+
 const List = () => {
   const [value, setValue] = useState("");
   const [todos, setTodos] = useState([]);
@@ -31,13 +35,15 @@ const List = () => {
     <>
       <MyStyle>
         <div>
+          {/* Je créer mon 'formulaire' */}
           <input value={value} onChange={(e) => setValue(e.target.value)} />
           <br />
           <Button onClick={() => handleOnClick()}> Ajouter une tâche </Button>
 
+          {/* Je récupére et j'affiche ma liste de Todos */}
           {todos.map((todo) => (
-            <div style={{ border: "1px solid green", margin: 10, padding: 10 }}>
-              {todo.title}
+            <div style={{ textAlign: "left" }}>
+              <big>➺</big> {todo.title}
               <Todo />
             </div>
           ))}
