@@ -1,4 +1,5 @@
 import Todo from "./Todo";
+import { useState } from "react";
 
 const List = () => {
   const [value, setValue] = useState("");
@@ -12,7 +13,7 @@ const List = () => {
   return (
     <>
       <input value={value} onChange={(e) => setValue(e.target.value)} />
-      <button onClick={() => handleOnClick()}> Créer une liste </button>
+      <button onClick={() => handleOnClick()}> Ajouter une tâche </button>
 
       {Todo.map((todo) => (
         <todp todo={todo} />
