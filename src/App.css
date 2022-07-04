@@ -11,14 +11,15 @@
   font-family: "Yellowtail", cursive;
  }
 
-.button {
+/* .button {
 border-radius: 12px;
 background-color:  #c70d89;
 }
 .button:hover {
   background-color: #c70d89;
   color: white;
-}
+} */
+
 
 .div {
 background-color: gainsboro;

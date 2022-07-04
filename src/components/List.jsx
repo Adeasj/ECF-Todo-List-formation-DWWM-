@@ -1,7 +1,7 @@
 import Todo from "./Todo";
 import { useState } from "react";
 
-const List = () => {
+const List = ({ list }) => {
   const [value, setValue] = useState("");
   const [todos, setTodos] = useState([]);
 
@@ -12,10 +12,12 @@ const List = () => {
 
   return (
     <>
-      <input value={value} onChange={(e) => setValue(e.target.value)} />
-      <button onClick={() => handleOnClick()}> Ajouter une tâche </button>
-
       <div style={{ border: "2px solid hotpink", margin: 10, padding: 10 }}>
+        <h2> {List.title}</h2>
+
+        <input value={value} onChange={(e) => setValue(e.target.value)} />
+        <button onClick={() => handleOnClick()}> Ajouter une tâche </button>
+
         {todos.map((todo, i) => (
           <Todo todo={todo} key={i} />
         ))}
