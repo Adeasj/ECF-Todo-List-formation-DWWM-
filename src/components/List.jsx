@@ -52,7 +52,7 @@ const List = () => {
             </div>
           ))}
         </div>
-      </MyStyle>{" "}
+      </MyStyle>
     </>
   );
 };
