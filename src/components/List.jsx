@@ -6,7 +6,7 @@ const List = ({ list }) => {
   const [todos, setTodos] = useState([]);
 
   function handleOnClick() {
-    setTodos((prevstate) => [...prevstate, { id: 1, title: value }]);
+    setTodos((prevState) => [...prevState, { id: 1, title: value }]);
     setValue("");
   }
 
