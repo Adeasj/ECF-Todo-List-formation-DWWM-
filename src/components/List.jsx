@@ -3,8 +3,11 @@ import { useState } from "react";
 import styled from "styled-components";
 
 const MyStyle = styled.section`
-  padding: 10;
-  background: #f9e5f5;
+  padding: 20px;
+  border: 4px solid #f3e4c1;
+  border-radius: 20px;
+  margin: 10;
+  background: #ffece5;
 `;
 
 const List = () => {
@@ -19,12 +22,12 @@ const List = () => {
   return (
     <>
       <MyStyle>
-        <div style={{ border: "2px solid hotpink", margin: 10, padding: 10 }}>
+        <div>
           <input value={value} onChange={(e) => setValue(e.target.value)} />
           <button onClick={() => handleOnClick()}> Ajouter une tâche </button>
 
           {todos.map((todo) => (
-            <div style={{ border: "2px solid green", margin: 10, padding: 10 }}>
+            <div style={{ border: "1px solid green", margin: 10, padding: 10 }}>
               {todo.title}
               <Todo />
             </div>

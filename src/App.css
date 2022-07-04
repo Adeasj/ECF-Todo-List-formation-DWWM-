@@ -1,7 +1,11 @@
 .App {
   text-align: center; 
-  background-image: url("https://img.freepik.com/free-photo/pink-with-yellow-scratches-marble-surface_53876-129735.jpg?w=2000");
+ 
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  background-image: url("https://img.freepik.com/free-photo/pink-with-yellow-scratches-marble-surface_53876-129735.jpg?w=2000");
+ width: 100%;
   align-items: center;
 
   color: hsl(318, 93%, 22%);
@@ -16,7 +20,6 @@ background-color:  #c70d89;
   background-color: #c70d89;
   color: white;
 } */
-
 
 .div {
 background-color: gainsboro;
