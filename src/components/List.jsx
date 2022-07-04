@@ -16,8 +16,8 @@ const List = () => {
       <button onClick={() => handleOnClick()}> Ajouter une tâche </button>
 
       <div style={{ border: "2px solid hotpink", margin: 10, padding: 10 }}>
-        {todos.map((todo, index) => (
-          <Todo todo={todo} key={index} />
+        {todos.map((todo, i) => (
+          <Todo todo={todo} key={i} />
         ))}
       </div>
     </>
