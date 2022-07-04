@@ -10,6 +10,14 @@ const ListStyle = styled.section`
   background-color: #ebd8db;
 `;
 
+const Button = styled.button`
+  color: #dbbfc2;
+  margin: 4px;
+  padding: 4px;
+  border: 2px solid #dbbfc2;
+  border-radius: 4px;
+`;
+
 const ListContainer = () => {
   const [value, setValue] = useState("");
   const [lists, setLists] = useState([]);
@@ -24,7 +32,7 @@ const ListContainer = () => {
       <ListStyle>
         <div>
           <input value={value} onChange={(e) => setValue(e.target.value)} />
-          <button onClick={() => handleOnClick()}> Créer une liste </button>
+          <Button onClick={() => handleOnClick()}> Créer une liste </Button>
 
           {lists.map((list) => (
             <div>
