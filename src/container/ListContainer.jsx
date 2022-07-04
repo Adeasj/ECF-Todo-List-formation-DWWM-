@@ -16,8 +16,11 @@ const ListContainer = () => {
         <input value={value} onChange={(e) => setValue(e.target.value)} />
         <button onClick={() => handleOnClick()}> Créer une liste </button>
 
-        {lists.map((list, i) => (
-          <List list={list} key={i} />
+        {lists.map((list) => (
+          <div>
+            <h2> {list.title}</h2>
+            <List />
+          </div>
         ))}
       </div>
     </>
