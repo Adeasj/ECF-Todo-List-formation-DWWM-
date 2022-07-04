@@ -1,14 +1,28 @@
 .App {
-  text-align: center;
-    background-color: #c70d89;
-    background-image: url("https://img.freepik.com/free-photo/old-paper-texture-vintage-paper-background_262663-423.jpg?w=2000");
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: hsl(198, 1%, 29%);
-    font-family: "Yellowtail", cursive;
+  text-align: center; 
+   background-color: #c70d89;
+  background-image: url("https://img.freepik.com/free-photo/pink-with-yellow-scratches-marble-surface_53876-129735.jpg?w=2000");
 
+  /* box-sizing: border-box;
+  display: flex; */
+  justify-content: center;
+  align-items: center;
+  color: hsl(318, 93%, 22%);
+  font-family: "Yellowtail", cursive;
+ }
+
+.button {
+border-radius: 12px;
+background-color:  #c70d89;
+}
+.button:hover {
+  background-color: #c70d89;
+  color: white;
+}
+
+.div {
+background-color: gainsboro;
+border-radius: 20%;
 }
 
 .App-logo {

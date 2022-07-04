@@ -15,9 +15,11 @@ const List = () => {
       <input value={value} onChange={(e) => setValue(e.target.value)} />
       <button onClick={() => handleOnClick()}> Ajouter une tâche </button>
 
-      {todos.map((todo) => (
-        <Todo todo={todo} />
-      ))}
+      <div style={{ border: "2px solid hotpink", margin: 10, padding: 10 }}>
+        {todos.map((todo) => (
+          <Todo todo={todo} />
+        ))}
+      </div>
     </>
   );
 };
