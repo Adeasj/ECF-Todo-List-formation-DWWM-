@@ -20,6 +20,10 @@ const Button = styled.button`
   border-radius: 4px;
 `;
 
+const Input = styled.input`
+  width: 400px;
+`;
+
 // Je créer ma fonction ListContainer qui me retournera une nouvel list de todos à chaque click (handOnClick)
 
 const ListContainer = () => {
@@ -36,7 +40,7 @@ const ListContainer = () => {
       <ListStyle>
         <div>
           {/* Je créer mon 'formulaire' */}
-          <input value={value} onChange={(e) => setValue(e.target.value)} />
+          <Input value={value} onChange={(e) => setValue(e.target.value)} />
           <Button onClick={() => handleOnClick()}> Créer une liste </Button>
 
           {/* Je récupére et j'affiche mes listes */}

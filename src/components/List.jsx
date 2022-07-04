@@ -7,8 +7,8 @@ import styled from "styled-components";
 const MyStyle = styled.section`
   padding: 20px;
   border: 4px solid #f3e4c1;
-  border-radius: 50% 20% / 10% 40%;
-  margin: 10;
+  border-radius: 10% 40% /50% 20%;
+  margin: auto;
   background: #ffece5;
 `;
 
@@ -18,6 +18,10 @@ const Button = styled.button`
   padding: 4px;
   border: 2px solid #dbbfc2;
   border-radius: 4px;
+`;
+
+const Input = styled.input`
+  width: 300px;
 `;
 
 // Je créer ma fonction liste que je vais retourner pour ajouter un nouveau todos à chaque click (handleOnClick)
@@ -36,14 +40,14 @@ const List = () => {
       <MyStyle>
         <div>
           {/* Je créer mon 'formulaire' */}
-          <input value={value} onChange={(e) => setValue(e.target.value)} />
+          <Input value={value} onChange={(e) => setValue(e.target.value)} />
           <br />
           <Button onClick={() => handleOnClick()}> Ajouter une tâche </Button>
 
           {/* Je récupére et j'affiche ma liste de Todos */}
           {todos.map((todo) => (
             <div style={{ textAlign: "left" }}>
-              <big>➺</big> {todo.title}
+              <big> &nbsp; ➺</big> {todo.title}
               <Todo />
             </div>
           ))}
