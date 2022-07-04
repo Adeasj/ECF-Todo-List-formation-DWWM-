@@ -16,8 +16,8 @@ const ListContainer = () => {
       <button onClick={() => handleOnClick()}> Créer une liste </button>
 
       <div style={{ border: "2px solid purple", margin: 10, padding: 10 }}>
-        {lists.map((list) => (
-          <List list={list} />
+        {lists.map((list, index) => (
+          <List list={list} key={index} />
         ))}
       </div>
     </>
