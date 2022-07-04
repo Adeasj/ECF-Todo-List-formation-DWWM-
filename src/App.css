@@ -1,14 +1,10 @@
 .App {
   text-align: center; 
-   background-color: #c70d89;
   background-image: url("https://img.freepik.com/free-photo/pink-with-yellow-scratches-marble-surface_53876-129735.jpg?w=2000");
-
-  /* box-sizing: border-box;
-  display: flex; */
   justify-content: center;
   align-items: center;
   color: hsl(318, 93%, 22%);
-  font-family: "Yellowtail", cursive;
+  font-family:Georgia, 'Times New Roman', Times, serif
  }
 
 /* .button {
