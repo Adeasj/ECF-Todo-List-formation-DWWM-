@@ -1,7 +1,7 @@
 import List from "../components/List";
 
 const ListContainer = () => {
-  return <p> Je suis le container </p>;
+  return <h1> Je suis le container </h1>;
 };
 
 export default ListContainer;
