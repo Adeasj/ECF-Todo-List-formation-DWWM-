@@ -2,24 +2,23 @@ import Todo from "./Todo";
 import { useState } from "react";
 
 const List = () => {
-  const [value, setValue] = useState("");
-  const [todos, setLists] = useState([]);
+const [value, setValue] = ('');
+const [todos, setValue] = ([]);
 
-  function handleOnClick() {
-    setLists((prevState) => [...prevState, { id: 1, title: value }]);
-    setValue("");
-  }
+function handleOnClick () {
+    setTodos((prevstate) =>[...prevstate, {id: 1, title: value}]);
+    setValue("";)
+}
 
-  return (
+return (
     <>
-      <input value={value} onChange={(e) => setValue(e.target.value)} />
-      <button onClick={() => handleOnClick()}> Ajouter une tâche </button>
+    <input value={value} onChange={(e) => setValue(e.target.value)} />
+    <button onClick={() => handleOnClick()}> Ajouter une tâche </button>
 
-      {Todo.map((todo) => (
-        <todp todo={todo} />
-      ))}
+    {todos.map((todo) => (<todo todo={todo} />))}
     </>
-  );
-};
+)
+
+}
 
 export default List;
